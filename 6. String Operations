@@ -81,4 +81,4 @@ break;
 
 
 Error free:
-Label1.Text = $"number of digits:{num}<br/>" + $"capital letters:{cl}<br/>" +$"small letters:{sl}<br/>" + $"spaces:{sp}<br/>" + $"special symbols:{sp++}"; 
+Label1.Text = string.Format("number of digits: {0}<br/>capital letters: {1}<br/>small letters: {2}<br/>spaces: {3}<br/>special symbols: {4}", num, cl, sl, sp, sp++);
