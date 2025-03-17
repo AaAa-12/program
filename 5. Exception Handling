@@ -104,6 +104,8 @@ MessageBox.Show($"Unexpected error: {ex.Message}", "Error");
 
 
 Error free
+in try (form2):
 MessageBox.Show(string.Format("Valid Accession Date: {0}", accessionDate.ToString("dd/MM/yyyy")));
 
+above finally (form2):
 MessageBox.Show("Unexpected error: " + ex.Message, "Error");
