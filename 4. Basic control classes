@@ -38,12 +38,12 @@ timeryellow.Enabled = true;
 } 
 else if (yellow.Visible == true){ 
 red.Visible = true; 
-                yellow.Visible = false; 
-                green.Visible = false; 
-                textBox1.Text = "stop your vehicle"; 
-                timergreen.Enabled = true;                
-            } 
-        } 
+yellow.Visible = false; 
+green.Visible = false; 
+textBox1.Text = "stop your vehicle"; 
+timergreen.Enabled = true;                
+} 
+} 
         private void start_Click(object sender, EventArgs e) 
         { 
             timerred.Enabled = true; 
