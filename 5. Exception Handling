@@ -39,6 +39,11 @@ this.Hide();
 } 
 } 
 } 
+
+
+
+
+
 Form2: 
 using System; 
 using System.Collections.Generic; 
