@@ -108,7 +108,9 @@ private void Diaplay_Click(object sender, EventArgs e)
 
 
 Error free
+Add:
 MessageBox.Show(string.Format("Student found: {0} - Marks: {1}, {2}, {3}", 
     StudentNames[i], StudentMarks[i, 0], StudentMarks[i, 1], StudentMarks[i, 2]));
 
+Average:
 MessageBox.Show(string.Format("Class Average Marks: {0:F2}", average));
