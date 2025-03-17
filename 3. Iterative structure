@@ -20,7 +20,7 @@ InitializeComponent();
 } 
 private void Add_Click(object sender, EventArgs e) 
 { 
-if (studentcount <= 100) 
+if (studentcount >= 100) 
 { 
 MessageBox.Show("student list full"); 
 } 
