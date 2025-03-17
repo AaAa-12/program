@@ -65,3 +65,16 @@ break;
         } 
     } 
 } 
+
+
+
+
+<asp:DropDownList ID="DropDownList1" runat="server">
+<asp:ListItem Texts "Clone" Value="1" />
+<asp:ListItem Texts "Contains" Value="2"/>
+<asp:ListItem Text="To Lowercase" Value="3" />
+<asp:ListItem Text="To Uppercase" Value="4" />
+<asp:ListItem Texts"Iris" Value="5" />
+<asp:ListItem Text="Substring" Value="6">
+<asp:ListItem Text="Replace" Value="7"/>
+</asp:DropDownList>
