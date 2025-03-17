@@ -49,12 +49,12 @@ break;
                     output = s.Trim(); 
                     break; 
                 case 6: 
-                    int start = int.Parse(TextBox4.Text); 
-                    int length = int.Parse(TextBox5.Text); 
+                    int start = int.Parse(TextBox3.Text); 
+                    int length = int.Parse(TextBox4.Text); 
                     output = s.Substring(start, length); 
                     break; 
                 case 7: 
-                    output = s.Replace(TextBox6.Text, TextBox7.Text); 
+                    output = s.Replace(TextBox5.Text, TextBox6.Text); 
                     break; 
                 default: 
                     output = "Invalid choice."; 
