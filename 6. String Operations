@@ -78,3 +78,7 @@ break;
 <asp:ListItem Text="Substring" Value="6">
 <asp:ListItem Text="Replace" Value="7"/>
 </asp:DropDownList>
+
+
+Error free:
+Label1.Text = $"number of digits:{num}<br/>" + $"capital letters:{cl}<br/>" +$"small letters:{sl}<br/>" + $"spaces:{sp}<br/>" + $"special symbols:{sp++}"; 
