@@ -100,3 +100,10 @@ MessageBox.Show($"Unexpected error: {ex.Message}", "Error");
         } 
     } 
 }
+
+
+
+Error free
+MessageBox.Show(string.Format("Valid Accession Date: {0}", accessionDate.ToString("dd/MM/yyyy")));
+
+MessageBox.Show("Unexpected error: " + ex.Message, "Error");
