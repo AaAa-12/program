@@ -1,97 +1,101 @@
-<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="WebForm1.aspx.cs" 
-Inherits="Validation_Class.WebForm1" %> 
-<!DOCTYPE html> 
-<html xmlns="http://www.w3.org/1999/xhtml"> 
-<head runat="server"> 
-<title></title> 
-<style type="text/css"> 
-.auto-style1 { 
-width: 308px; 
-} 
-</style> 
-</head> 
-<body> 
-<form id="form1" runat="server"> 
-<div> 
-<table style="width:100%;"> 
-<tr> 
-<td class="auto-style1">Registration Form</td> 
-<td>&nbsp;</td> 
-<td>&nbsp;</td> 
-</tr> 
-<tr> 
-<td class="auto-style1"> 
-<asp:Label ID="Label1" runat="server" Text="Username"></asp:Label> 
-</td> 
-<td> 
-<asp:TextBox ID="TextBox1" runat="server" 
-OnTextChanged="TextBox1_TextChanged"></asp:TextBox> 
-<asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" 
-ControlToValidate="TextBox1" ErrorMessage="Enter valid 
-Username"></asp:RequiredFieldValidator> 
-</td> 
-<td>&nbsp;</td> 
-</tr> 
-<tr> 
-<td class="auto-style1"> 
-<asp:Label ID="Label2" runat="server" Text="Age"></asp:Label> 
-</td> 
-<td> 
-<asp:TextBox ID="TextBox2" runat="server" 
-OnTextChanged="TextBox1_TextChanged"></asp:TextBox> 
-<asp:RangeValidator ID="RangeValidator1" runat="server" 
-ControlToValidate="TextBox2" ErrorMessage="Enter Valid Age" MaximumValue="50" 
-MinimumValue="30"></asp:RangeValidator> 
-</td> 
-<td>&nbsp;</td> 
-</tr> 
-<tr> 
-<td class="auto-style1"> 
-<asp:Label ID="Label3" runat="server" Text="Email"></asp:Label> 
-</td> 
-<td> 
-<asp:TextBox ID="TextBox3" runat="server" 
-OnTextChanged="TextBox1_TextChanged"></asp:TextBox> 
-<asp:RegularExpressionValidator ID="RegularExpressionValidator1" 
-runat="server" ControlToValidate="TextBox3" ErrorMessage="Enter Valid Email" 
-ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([
-.]\w+)*"></asp:RegularExpressionValidator> 
-</td> 
-<td>&nbsp;</td> 
-</tr> 
-<tr> 
-<td class="auto-style1"> 
-<asp:Label ID="Label4" runat="server" Text="Password"></asp:Label> 
-</td> 
-<td> 
-<asp:TextBox ID="TextBox4" runat="server" 
-OnTextChanged="TextBox1_TextChanged" Type="Password"></asp:TextBox> 
-</td> 
-<td>&nbsp;</td> 
-</tr> 
-<tr> 
-<td class="auto-style1"> 
-<asp:Label ID="Label5" runat="server" Text="Retype Password"></asp:Label> 
-</td> 
-<td> 
-<asp:TextBox ID="TextBox5" runat="server" 
-OnTextChanged="TextBox1_TextChanged" Type="Password"></asp:TextBox> 
-<asp:CompareValidator ID="CompareValidator1" runat="server" 
-ControlToCompare="TextBox4" ControlToValidate="TextBox5" ErrorMessage="Enter Valid 
-Password"></asp:CompareValidator> 
-</td> 
-<td>&nbsp;</td> 
-</tr> 
-<tr> 
-<td class="auto-style1"> 
-<asp:Button ID="Button1" runat="server" Text="Register" 
-OnClick="Button1_Click" PostBackUrl="~/WebForm2.aspx" /> 
-</td> 
-<td>&nbsp;</td> 
-<td>&nbsp;</td> 
-</tr> 
-</table> 
-</div> 
-</form> 
-</body> 
+<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="WebForm1.aspx.cs" Inherits="validation_class.WebForm1" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <style type="text/css">
+        .auto-style1 {
+            height: 26px;
+        }
+        .auto-style2 {
+            width: 362px;
+        }
+        .auto-style3 {
+            height: 26px;
+            width: 362px;
+        }
+        .auto-style4 {
+            width: 344px;
+        }
+        .auto-style5 {
+            height: 26px;
+            width: 344px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            Registration form</div>
+        <table style="width:100%;">
+            <tr>
+                <td class="auto-style2">
+                    <asp:Label ID="Label1" runat="server" Text="username"></asp:Label>
+                </td>
+                <td class="auto-style4">
+                    <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+                </td>
+                <td>
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="TextBox1" ErrorMessage="enter valid username"></asp:RequiredFieldValidator>
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style3">
+                    <asp:Label ID="Label2" runat="server" Text="Age"></asp:Label>
+                </td>
+                <td class="auto-style5">
+                    <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
+                </td>
+                <td class="auto-style1">
+                    <asp:RangeValidator ID="RangeValidator1" runat="server" ControlToValidate="TextBox2" ErrorMessage="enter valid age" MaximumValue="50" MinimumValue="20"></asp:RangeValidator>
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style2">
+                    <asp:Label ID="Label3" runat="server" Text="email"></asp:Label>
+                </td>
+                <td class="auto-style4">
+                    <asp:TextBox ID="TextBox3" runat="server"></asp:TextBox>
+                </td>
+                <td>
+                    <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ControlToValidate="TextBox3" ErrorMessage="enter valid email" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*"></asp:RegularExpressionValidator>
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style2">
+                    <asp:Label ID="Label4" runat="server" Text="password"></asp:Label>
+                </td>
+                <td class="auto-style4">
+                    <asp:TextBox ID="TextBox4" runat="server" type="password"></asp:TextBox>
+                </td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td class="auto-style2">
+                    <asp:Label ID="Label5" runat="server" Text="Re-type password" type="password"></asp:Label>
+                </td>
+                <td class="auto-style4">
+                    <asp:TextBox ID="TextBox5" runat="server"></asp:TextBox>
+                </td>
+                <td>
+                    <asp:CompareValidator ID="CompareValidator1" runat="server" ControlToCompare="TextBox4" ControlToValidate="TextBox5" ErrorMessage="enter valid password"></asp:CompareValidator>
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style2">
+                    <asp:Button ID="Button1" runat="server" Text="Register" OnClick="Button1_Click" style="height: 29px" />
+                </td>
+                <td class="auto-style4">&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td class="auto-style2">&nbsp;</td>
+                <td class="auto-style4">&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+        </table>
+    </form>
+</body>
 </html>
