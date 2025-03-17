@@ -86,7 +86,7 @@ catch (Exception ex)
 MessageBox.Show($"Unexpected error: {ex.Message}", "Error"); 
 } 
  
-             Finally 
+             finally 
             { 
                 textBox1.Clear(); 
                 textBox2.Clear(); 
